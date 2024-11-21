@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Spacer, Button } from '@chakra-ui/react';
 
 export const Header: React.FC = () => {
   return (
-    <Flex as="header" align="center" justify="space-between" padding={4} backgroundColor="blue.500">
+    <Flex as="header" align="center" justify="space-between" padding={4} backgroundColor="blue.500" width="100%" position="fixed" top={0}>
       <Heading size="lg" color="white">
         Phone Store
       </Heading>

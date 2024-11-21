@@ -13,10 +13,11 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <Flex direction="column" minHeight="100vh">
-      <Header />
-      <Flex flex="1" bg="gray.200" maxW="100%" justify="center" align="center">
-        <Box p={4} bg="white" borderRadius="md" boxShadow="lg" alignSelf={"center"}>
+    <>
+    
+    <Flex minHeight="100%" minWidth="100%" justify="center"  align="center" position="fixed" width="100%"  bgColor={"white"}>
+    <Header />
+        <Box p={4} bg="white" borderRadius="md" boxShadow="lg" position="relative" maxW="600px"  mx="auto" > 
           <Text fontSize="2xl" fontWeight="bold" mb={4} textAlign="center">
             Welcome to the Phone Store!
           </Text>
@@ -40,8 +41,8 @@ const HomePage: React.FC = () => {
             ))}
           </List>
         </Box>
-      </Flex>
     </Flex>
+    </>
   );
 };
 
